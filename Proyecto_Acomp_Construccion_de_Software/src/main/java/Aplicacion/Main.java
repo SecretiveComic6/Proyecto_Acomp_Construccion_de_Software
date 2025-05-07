@@ -17,7 +17,7 @@ public class Main {
      * Punto de entrada de la aplicación.
      * <p>
      * Inicializa el repositorio, servicio, vista y controlador de tareas, 
-     * y lanza la ventana principal en el hilo de la interfaz gráfica (EDT).
+     * y lanza la ventana principal en el hilo de la interfaz gráfica.
      *
      * @param args argumentos de línea de comandos (no utilizados)
      */
