@@ -65,7 +65,6 @@ public class TareaService {
         return texto.length() > max ? texto.substring(0, max - 3) + "..." : texto;
     }
 
-
     public void actualizarTarea(int id, String nuevoTitulo, String nuevaDescripcion,
                                 LocalDate nuevaFecha, Prioridad nuevaPrioridad, Estado nuevoEstado) {
         Tarea tarea = buscarPorId(id);
@@ -106,5 +105,31 @@ public class TareaService {
                 .filter(t -> t.getId() == id)
                 .findFirst()
                 .orElse(null);
+    }
+
+    public List<Tarea> filtrarPorEstado(Estado estado) {
+        return tareas.stream()
+                .filter(t -> t.getEstado() == estado)
+                .toList();
+    }
+
+    public List<Tarea> filtrarPorPrioridad(Prioridad prioridad) {
+        return tareas.stream()
+                .filter(t -> t.getPrioridad() == prioridad)
+                .toList();
+    }
+
+    public List<Tarea> filtrarPorFecha(LocalDate fecha) {
+        return tareas.stream()
+                .filter(t -> t.getFechaVencimiento().equals(fecha))
+                .toList();
+    }
+
+    public List<Tarea> buscarPorPalabraClave(String palabra) {
+        String palabraClave = palabra.toLowerCase();
+        return tareas.stream()
+                .filter(t -> t.getTitulo().toLowerCase().contains(palabraClave)
+                        || t.getDescripcion().toLowerCase().contains(palabraClave))
+                .toList();
     }
 }
