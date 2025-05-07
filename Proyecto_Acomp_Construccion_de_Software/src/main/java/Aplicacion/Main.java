@@ -1,5 +1,6 @@
 package Aplicacion;
 
+import Modelo.TareaRepository;
 import Modelo.Estado;
 import Modelo.Prioridad;
 import Modelo.TareaService;
@@ -12,7 +13,8 @@ import Modelo.Tarea;
 
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
-    private static final TareaService tareaService = new TareaService();
+    private static final TareaRepository tareaRepository = new TareaRepository();
+    private static final TareaService tareaService = new TareaService(tareaRepository);
 
     public static void main(String[] args) {
         boolean salir = false;

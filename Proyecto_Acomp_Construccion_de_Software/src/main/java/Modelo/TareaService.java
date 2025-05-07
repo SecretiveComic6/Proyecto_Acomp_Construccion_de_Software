@@ -8,8 +8,14 @@ import java.time.LocalDate;
 import java.util.*;
 
 public class TareaService {
-    private final List<Tarea> tareas = new ArrayList<>();
+    private List<Tarea> tareas = new ArrayList<>();
     private final Scanner scanner = new Scanner(System.in);
+    private final TareaRepository repository;
+
+    public TareaService(TareaRepository repository) {
+        this.repository = repository;
+        this.tareas = new ArrayList<>(repository.obtenerTareas());
+    }
 
     public void agregarTarea(String titulo, String descripcion, LocalDate fechaVencimiento,
                              Prioridad prioridad, Estado estado) {
@@ -24,6 +30,7 @@ public class TareaService {
 
         Tarea nuevaTarea = new Tarea(titulo.trim(), descripcion, fechaVencimiento, prioridad, estado);
         tareas.add(nuevaTarea);
+        repository.guardarEnArchivo(tareas); // Guardar después de agregar
         System.out.println("Tarea agregada: \n" + nuevaTarea);
     }
 
@@ -79,6 +86,7 @@ public class TareaService {
         if (nuevaPrioridad != null) tarea.setPrioridad(nuevaPrioridad);
         if (nuevoEstado != null) tarea.setEstado(nuevoEstado);
 
+        repository.guardarEnArchivo(tareas); // Guardar después de actualizar
         System.out.println("Tarea actualizada:\n" + tarea);
     }
 
@@ -94,6 +102,7 @@ public class TareaService {
 
         if (respuesta.equals("sí") || respuesta.equals("si")) {
             tareas.remove(tarea);
+            repository.guardarEnArchivo(tareas); // Guardar después de eliminar
             System.out.println("Tarea eliminada.");
         } else {
             System.out.println("Eliminación cancelada.");

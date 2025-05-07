@@ -65,6 +65,10 @@ public class Tarea {
     public void setEstado(Estado estado) {
         this.estado = estado;
     }
+    
+    public static void setContadorId(int nuevoValor) {
+        contadorId = nuevoValor;
+    }
 
     @Override
     public String toString() {
