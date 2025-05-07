@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "titulo": "Cait",
+    "titulo": "Caitlyn",
     "descripcion": "Ranked",
     "fechaVencimiento": "2025-05-23",
     "prioridad": "MEDIA",
@@ -17,14 +17,38 @@
   },
   {
     "id": 4,
-    "titulo": "Tarea 1",
-    "descripcion": "Descripción 1",
-    "fechaVencimiento": "2025-05-10",
+    "titulo": "Syndra",
+    "descripcion": "Poder Habilidad",
+    "fechaVencimiento": "2025-12-11",
     "prioridad": "ALTA",
     "estado": "PENDIENTE"
   },
   {
     "id": 5,
+    "titulo": "Qiyana",
+    "descripcion": "Asesino",
+    "fechaVencimiento": "2025-12-12",
+    "prioridad": "BAJA",
+    "estado": "COMPLETADA"
+  },
+  {
+    "id": 6,
+    "titulo": "Swain",
+    "descripcion": "Gran General",
+    "fechaVencimiento": "2025-06-12",
+    "prioridad": "ALTA",
+    "estado": "COMPLETADA"
+  },
+  {
+    "id": 7,
+    "titulo": "Gwen",
+    "descripcion": "Top",
+    "fechaVencimiento": "2027-12-08",
+    "prioridad": "BAJA",
+    "estado": "EN_PROGRESO"
+  },
+  {
+    "id": 9,
     "titulo": "Tarea 2",
     "descripcion": "Descripción 2",
     "fechaVencimiento": "2025-05-12",

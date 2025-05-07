@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.mycompany</groupId>
-    <artifactId>Commit_3</artifactId>
+    <artifactId>Proyecto_Acomp_Construccion_de_Software</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>23</maven.compiler.release>
-        <exec.mainClass>com.mycompany.Commit_3.Commit_3</exec.mainClass>
+        <exec.mainClass>com.mycompany.proyecto_acomp_construccion_de_software.Proyecto_Acomp_Construccion_de_Software</exec.mainClass>
     </properties>
     <dependencies>
         <dependency>
@@ -16,7 +16,7 @@
             <artifactId>gson</artifactId>
             <version>2.10.1</version>
         </dependency>
-        <!-- JUnit 5 -->
+                <!-- JUnit 5 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -31,5 +31,6 @@
             <version>5.12.0</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 </project>
