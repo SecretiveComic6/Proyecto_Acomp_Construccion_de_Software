@@ -1,0 +1,13 @@
+Modelo\TareaRepository$LocalDateAdapter.class
+vista\FormularioTareaDialog.class
+Modelo\TareaService.class
+controlador\TareaControlador.class
+Modelo\TareaRepository$1.class
+vista\DialogoFiltroTarea.class
+Modelo\Tarea.class
+Modelo\TareaRepository.class
+Modelo\Prioridad.class
+Aplicacion\Main.class
+vista\TareaTableModel.class
+Modelo\Estado.class
+vista\VentanaPrincipal.class

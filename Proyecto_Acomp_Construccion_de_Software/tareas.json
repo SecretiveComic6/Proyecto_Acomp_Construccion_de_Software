@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "titulo": "Caitlyn",
+    "descripcion": "Ranked",
+    "fechaVencimiento": "2025-05-23",
+    "prioridad": "MEDIA",
+    "estado": "EN_PROGRESO"
+  },
+  {
+    "id": 3,
+    "titulo": "Ahri",
+    "descripcion": "Mid",
+    "fechaVencimiento": "2027-12-11",
+    "prioridad": "ALTA",
+    "estado": "PENDIENTE"
+  },
+  {
+    "id": 4,
+    "titulo": "Syndra",
+    "descripcion": "Poder Habilidad",
+    "fechaVencimiento": "2025-12-11",
+    "prioridad": "ALTA",
+    "estado": "PENDIENTE"
+  },
+  {
+    "id": 5,
+    "titulo": "Qiyana",
+    "descripcion": "Asesino",
+    "fechaVencimiento": "2025-12-12",
+    "prioridad": "BAJA",
+    "estado": "COMPLETADA"
+  },
+  {
+    "id": 6,
+    "titulo": "Swain",
+    "descripcion": "Gran General",
+    "fechaVencimiento": "2025-06-12",
+    "prioridad": "ALTA",
+    "estado": "COMPLETADA"
+  },
+  {
+    "id": 7,
+    "titulo": "Gwen",
+    "descripcion": "Top",
+    "fechaVencimiento": "2027-12-08",
+    "prioridad": "BAJA",
+    "estado": "EN_PROGRESO"
+  },
+  {
+    "id": 9,
+    "titulo": "Tarea 2",
+    "descripcion": "Descripción 2",
+    "fechaVencimiento": "2025-05-12",
+    "prioridad": "MEDIA",
+    "estado": "EN_PROGRESO"
+  }
+]
